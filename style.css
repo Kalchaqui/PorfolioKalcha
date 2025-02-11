@@ -336,8 +336,35 @@ body::-webkit-scrollbar-track {
 }
 
 
+/* CARD2*/
 
 
+.project__card2 {
+    position: relative; 
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 350px; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Espacio externo entre tarjetas */
+}
+
+.project__card2 img {
+    width: 50%; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Aseguramos que el zoom funcione correctamente */
+.project__card2 img:active,
+.project__card2 img:focus {
+    transform: scale(3) translateY(25%); /* Centra el zoom verticalmente */
+    z-index: 100; 
+    position: relative; }
 
 /* ------- PORTFOLIO -------- */
 
