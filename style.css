@@ -294,40 +294,49 @@ body::-webkit-scrollbar-track {
     width: 75%;
 }
 
-/* ------- juego -------- */
+/* ------- certificaciones -------- */
+
+/* Estilos para la tarjeta de certificación */
+/* Mantenemos tu CSS original */
+.project__card1 {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Espacio externo entre tarjetas */
+}
+
+.project__card1 img {
+    width: 50%; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Aseguramos que el zoom funcione correctamente */
+.project__card1 img:active,
+.project__card1 img:focus {
+    transform: scale(3) translateY(25%); /* Centra el zoom verticalmente */
+    z-index: 100; 
+    position: relative; 
+}
+
+/* Nuevas clases para el layout orgánico */
+.proyect__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 15px; /* Espacio entre tarjetas ajustable */
+    padding: 20px;
+    width: 100%;
+}
 
 
 
-/* ------- SERVICES -------- */
-.services {
-    padding-top: 81px;
-}
-.card {
-    background-color: #111111;
-    transition: all 0.2s ease-in;
-}
-.service__logo {
-    height: 60px;
-    width: 60px;
-    background-color: #000;
-    border-radius: 50%;
-    transition: all 0.2s ease-in;
-}
-
-.service__logo i {
-    font-size: x-large;
-    transition: all 0.2s ease-in;
-}
-
-.card:hover {
-    background-color: var(--secondary-bg-color);
-}
-.card:hover .service__logo {
-    background-color: #fff;
-}
-.card:hover .service__logo i {
-    color: #000;
-}
 
 
 /* ------- PORTFOLIO -------- */

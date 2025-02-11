@@ -31,7 +31,7 @@
             <div class="header__info flex align-items-center gap-3">
                 <ul class="flex flex-column xl:flex-row list-none">
                     <li onclick="scrollToSection('about')">Sobre mí</li>
-                    <li onclick="scrollToSection('services')">Servicios</li>
+                    <li onclick="scrollToSection('certificados')">Certificados</li>
                     <li onclick="scrollToSection('portfolio')">Portafolio</li>
                     <li onclick="scrollToSection('contact')">Contacto</li>
                 </ul>
@@ -109,70 +109,56 @@
         </section>
     </div>
     <!--JUEGO -->
-    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+    <section class="freelancer mb-4 mt-4 min-w-full flex justify-content-center align-items-center">
         <iframe src="juego/juego.html" width="80%" height="500" style="border:none;"></iframe>
 
     </section>
-    <!--SERVICES -->
+    <!--CERTIFICADOS -->
     <div class="container">
-        <section id="services" class="services min-h-full w-full pb-7">
-            <div class="services__title flex flex-column gap-3 text-center">
-                <h1 class="text-3xl md:text-5xl">El Stack que uso</h1>
+        <section id="certificados" class="portfolio min-h-full w-full pb-8 pt-8">
+            <div class="portfolio__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mis Certificados</h1>
                 <p class="text-gray-400 text-sm md:text-base">
-                    Detallo el stack que uso para el deasarrollo tanto front-end, back-end para así poder desarrollar una Dapps. 
-                   
+                    Estos son las certificaciones más importantes para mi en desarrollo tanto WEB2 como WEB3.
                 </p>
             </div>
-            <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
-                <div class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center">
-                        <i class="fa-brands fa-"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Node.js</p>
-                    </div>
+
+            <!-- Contenedor ÚNICO para todas las imágenes (sin anidar) -->
+            <div class="proyect__gallery flex justify-center items-center flex-wrap gap-3"> 
+                <!-- Tarjetas aquí (se mantienen igual) -->
+                <!-- Cada imagen dentro de su project__card1, pero TODAS en el MISMO contenedor -->
+                <div class="project__card1">
+                    <img src="./assets/proyecto-1.png" alt="" tabindex="0">
+                    <div class="overlay"></div>
                 </div>
-                <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-css3"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>CSS y Tailwind css</p>
-                    </div>
+                <div class="project__card1">
+                    <img src="./assets/proyecto-1.png" alt="" tabindex="0">
+                    <div class="overlay"></div>
                 </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-hardhat"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Solidity</p>
-                    </div>
+                <div class="project__card1">
+                    <img src="./assets/proyecto-1.png" alt="" tabindex="0">
+                    <div class="overlay"></div>
                 </div>
-                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-react"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>React Js, Ts</p>
-                    </div>
+                <div class="project__card1">
+                    <img src="./assets/proyecto-1.png" alt="" tabindex="0">
+                    <div class="overlay"></div>
                 </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Hardhat</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Wagmi y rainbowkit</p>
-                    </div>
-                </div>
-            </div>
+
+    <div class="project__card1">
+        <img src="./assets/proyecto-1.png" alt="" tabindex="0">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="project__card1">
+        <img src="./assets/proyecto-1.png" alt="" tabindex="0">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="project__card1">
+        <img src="./assets/proyecto-1.png" alt="" tabindex="0">
+        <div class="overlay"></div>
+    </div>
+</div> <!-- Cierre del contenedor principal -->
         </section>
 
         <!--PORTFOLIO -->
