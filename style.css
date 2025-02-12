@@ -341,9 +341,9 @@ body::-webkit-scrollbar-track {
 
 .project__card2 {
     position: relative; 
-    display: block;
+    display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items:baseline;
     width: 600px;
     height: 350px; 
     border-radius: 8px;
@@ -352,7 +352,7 @@ body::-webkit-scrollbar-track {
 }
 
 .project__card2 img {
-    width: 50%; 
+    width: 80%; 
     height: auto;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -362,7 +362,7 @@ body::-webkit-scrollbar-track {
 /* Aseguramos que el zoom funcione correctamente */
 .project__card2 img:active,
 .project__card2 img:focus {
-    transform: scale(3) translateY(25%); /* Centra el zoom verticalmente */
+    transform: scale(2.0) translateY(25%); /* Centra el zoom verticalmente */
     z-index: 100; 
     position: relative; }
 
