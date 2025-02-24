@@ -1,4 +1,10 @@
-      const filterContainer = document.querySelector(".gallery__categories");
+document.querySelectorAll('.retro-text').forEach(element => {
+    element.addEventListener('animationend', () => {
+        element.classList.add('finished');
+    });
+});
+    
+    const filterContainer = document.querySelector(".gallery__categories");
     const galleryItems = document.querySelectorAll(".project__card");
 
     filterContainer.addEventListener("click", (event) => {

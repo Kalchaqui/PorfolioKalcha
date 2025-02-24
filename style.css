@@ -302,6 +302,50 @@ body::-webkit-scrollbar-track {
         padding-top: 10rem;
     }
 }
+/* Estilo retro-futurista para los párrafos */
+.retro-text {
+    font-family: 'Courier New', Courier, monospace; /* Tipografía estilo terminal */
+    color: #00ff00; /* Verde robótico clásico */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Brillo neon */
+    display: inline-block;
+    white-space: pre-wrap; /* Respeta los saltos de línea y espacios */
+    overflow: hidden; /* Necesario para el efecto de tecleo */
+    border-right: 2px solid #00ff00; /* Cursor parpadeante */
+    animation: typing 4s steps(40, end) 1; /* Se ejecuta solo una vez */
+}
+
+/* Animación de tecleo */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%; /* Al final, el texto queda completamente visible */
+    }
+}
+
+/* Opcional: Cursor parpadeante después de terminar */
+.retro-text.finished {
+    animation: blink 0.75s step-end infinite; /* Cursor sigue parpadeando */
+}
+
+/* Animación de cursor parpadeante */
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #00ff00;
+    }
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 576px) {
+    .retro-text {
+        font-size: 0.9rem;
+        animation: typing 3s steps(30, end) 1; /* Se ejecuta solo una vez */
+    }
+}
 
 /* ------- ABOUT ME -------- */
 .about__me .image img {
@@ -525,8 +569,6 @@ footer {
 /* Aseguramos que no haya bordes o sombras en los elementos hijos */
 .social__media,
 .social__mediaIcons {
-    border: none !important;
-    box-shadow: none !important;
     outline: none !important;
 }
 

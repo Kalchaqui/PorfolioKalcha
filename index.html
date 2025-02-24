@@ -34,7 +34,7 @@
                 <ul class="flex flex-column xl:flex-row list-none">
                     <li onclick="scrollToSection('about')">Sobre mí</li>
                     <li onclick="scrollToSection('certificados')">Certificados</li>
-                    <li onclick="scrollToSection('portfolio')">Portafolio</li>
+                    <li onclick="scrollToSection('portfolio')">Proyectos</li>
                     <li onclick="scrollToSection('contact')">Contacto</li>
                 </ul>
 
@@ -47,29 +47,18 @@
             class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
             <div class="left__content col-12 xl:col-6">
                 <div class="message__bubble triangle mb-4 md:mb-2">
-                    <div class="message__text p-2 sm:p-3 text-center">
-                        <p>Hola, Soy</p>
-                    </div>
+                    
                 </div>
                 <h1 class="text-3xl sm:text-5xl md:text-7xl">Kalcha</h1>
-
-                <h2 class="text-gray-500">
-                    Desarrollador de Dapps
-                </h2>
+                <h2 class="text-gray-500">Desarrollador de Dapps</h2>
                 <br>
                 <br>
-                <p>Me llamo Diego Raúl Barrionuevo, soy desarrollador de aplicaciones Dapps usando las últimas
-                    tecnologías front-end y blockchain para buscar soluciones a problemas reales. 
-                </p>
+                <p><span class="retro-text">Me llamo Diego Raúl Barrionuevo, soy desarrollador de aplicaciones Dapps usando las últimas tecnologías front-end y blockchain para buscar soluciones a problemas reales.</span></p>
                 <br>
-                <P>Cuento con una base sólida gracias a mi participación en diversos hackathons y simulaciones laborales en equipo. 
-                    Durante estos años, he desarrollado múltiples proyectos que me han permitido fortalecer mis habilidades técnicas y colaborativas en entornos dinámicos y desafiantes.</P>
+                <p><span class="retro-text">Cuento con una base sólida gracias a mi participación en diversos hackathons y simulaciones laborales en equipo. Durante estos años, he desarrollado múltiples proyectos que me han permitido fortalecer mis habilidades técnicas y colaborativas en entornos dinámicos y desafiantes.</span></p>
                 <div class="home__buttons flex align-items-center gap-2 mt-6">
-                    <a href="./assets/CV Diego Raul Barrionuevo.pdf" aria-label="Descargar curriculum"
-                        class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
-                    <button onclick="scrollToSection('portfolio')"
-                        aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
-                        class="cursor-pointer border-round-lg">Mis proyectos</button>
+                    <a href="./assets/CV Diego Raul Barrionuevo.pdf" aria-label="Descargar curriculum" class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
+                    <button onclick="scrollToSection('portfolio')" aria-label="Deslizar a sección portafolio para mostrar mis trabajos" class="cursor-pointer border-round-lg">Mis proyectos</button>
                 </div>
             </div>
             <div class="right__content col-9 sm:col-6 xl:col-5">
@@ -82,10 +71,10 @@
                 <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
                     <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
                     <br>
-                    <p class="text-gray-500">Estoy motivado para trabajar y ganar valor
-                        experiencia en el área de servicios Blockchain.
-                        Puedo trabajar con tecnologías Web2 y Web3 enfocándome en buscar soluciones a problemas reales.
-                    </p>
+                    <br>
+                    <p><span class="retro-text">Estoy motivado para trabajar y ganar valor experiencia en el área de servicios Blockchain. Puedo trabajar con tecnologías Web2 y Web3 enfocándome en buscar soluciones a problemas reales.
+                        </span></p>
+                    
                     <div class="knowledge flex flex-column gap-3 mt-5">
                         <p>CSS 80%</p>
                         <div class="progress__bar progress__css">
@@ -123,14 +112,16 @@
         <iframe src="juego/juego.html" width="80%" height="500" style="border:none;"></iframe>
 
     </section>
+    <br>
     <!--CERTIFICADOS -->
     <div class="container">
         <section id="certificados" class="portfolio min-h-full w-full pb-8 pt-8">
             <div class="portfolio__title flex flex-column gap-3 text-center">
-                <h1 class="text-3xl md:text-5xl">Mis Certificados</h1>
-                <p class="text-gray-400 text-sm md:text-base">
+                <h1 class="text-3xl md:text-5xl">Mis Certificados</h1> 
+                <p><span class="retro-text">
                     Estos son las certificaciones más importantes para mi, tanto en desarrollo WEB2 como WEB3.
-                </p>
+                </span></p>
+                <br>
             </div>
 
             <!-- Contenedor ÚNICO para todas las imágenes (sin anidar) -->
@@ -216,10 +207,9 @@
         <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
             <div class="portfolio__title flex flex-column gap-3 text-center">
                 <h1 class="text-3xl md:text-5xl">Mis Proyectos</h1>
-                <p class="text-gray-400 text-sm md:text-base">
-                    Estos son los proyectos que estuve haciendo en el transcurso de estos últimos años de desarrollo
-                    WEB2 y WEB3.
-                </p>
+                <p><span class="retro-text align-items-center">
+                    Estos son los proyectos que estuve haciendo en el transcurso de estos últimos años de desarrollo WEB2 y WEB3.
+                </p></span>
             </div>
             <div class="portfolio__gallery">
                 <div class="gallery__categories mb-5 mt-5">
@@ -301,9 +291,11 @@
         <!--FOOTER -->
         <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
             <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
-                <h3>Redes sociales</h3><br>
+                <h1>Contactame</h1>
+                <br>
+                <br>
 
-                <p>Contactame</p>
+                <p><span class="retro-text">Redes sociales</p></span>
                 <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
                     <a href="https://x.com/DiegoRa87301862" target="_blank" aria-label="Ir a twiter">
                         <i class="fa-brands fa-twitter"></i>
